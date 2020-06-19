@@ -28,7 +28,6 @@ public class Cart
 	private User user;
 
 	public Cart() {
-
 	}
 
 	public long getCartid() {

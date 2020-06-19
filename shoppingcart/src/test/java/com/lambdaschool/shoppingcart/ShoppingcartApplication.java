@@ -1,9 +1,7 @@
 package com.lambdaschool.shoppingcart;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 /**
@@ -12,6 +10,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 // @EnableJpaAuditing
 @SpringBootApplication
 public class ShoppingcartApplication {
+	public static void main(String[] args) {
+		SpringApplication.run(ShoppingcartApplication.class, args);
+	}
+
 	// @Autowired
 	// private static Environment env;
 	//
@@ -22,15 +24,14 @@ public class ShoppingcartApplication {
 	// 		stop = true;
 	// 	}
 	// }
-
-	public static void main(String[] args) {
-		// checkEnvironmentVariable("OAUTHCLIENTID");
-		// checkEnvironmentVariable("OAUTHCLIENTSECRET");
-
-		SpringApplication.run(ShoppingcartApplication.class,
-			args);
-
-		// if (!stop) {
-		// }
-	}
+	//
+	// public static void main(String[] args) {
+	// 	checkEnvironmentVariable("OAUTHCLIENTID");
+	// 	checkEnvironmentVariable("OAUTHCLIENTSECRET");
+	//
+	// 	if (!stop) {
+	// 		SpringApplication.run(ShoppingcartApplication.class,
+	// 			args);
+	// 	}
+	// }
 }
